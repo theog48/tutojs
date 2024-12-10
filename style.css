@@ -1,11 +1,15 @@
 header{
     background-color: whitesmoke;
-    display: flex; /* Utilisation de Flexbox */
-    justify-content: space-between; /* Espace entre les éléments (ou 'flex-end' pour aligner à droite) */
-    align-items: center; /* Centrer verticalement */
-    padding: 10px 20px; /* Espacement interne */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
     background-color: whitesmoke;
-}
+        background-color: #fff; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
 body{
     background-color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,10 +17,10 @@ body{
 }
 #navigation {
     display: flex;
-    width: 100%;            /* Assurez-vous que la navigation prend toute la largeur */
-    padding: 10px 0;        /* Espace à l'intérieur de la barre de navigation */
+    width: 100%;            
+    padding: 10px 0;        
     justify-content: flex-end;
-    align-items: center;    /* Centrer verticalement les éléments de la navigation */
+    align-items: center;
 }
 #navigation a {
     color: black;
