@@ -37,5 +37,31 @@
     <footer>
         <p>© 2023 Tous droits réservés</p>
     </footer>
+    <script>
+        const header = document.getElementById('main-header');
+        header.style.backgroundColor = "red";
+        console.log(header)
+        const hightlight1 = document.querySelectorAll('.highlight');
+        hightlight1.forEach(item => {
+        item.style.color = "blue";
+        });
+        highlight = document.querySelector("span");
+        highlight.style.color ="red";
+        const menuItems = document.querySelectorAll('nav .menu-item');
+        menuItems.forEach(item => {
+        item.style.border = '1px solid black';
+        });
+        const title = document.querySelector('.title')
+        title.addEventListener('click',function(){
+            title.style.color ="white";
+        });
+        const span = document.querySelector(".span")
+        span.addEventListener('mouseenter', function(){
+            span.style.color ="white"
+        })
+        span.addEventListener('mouseleave', function() {
+        span.style.color = "";
+        });
+    </script>
 </body>
 </html>
