@@ -58,3 +58,28 @@ if (event.target === modal) {
     modal.style.display = 'none';
 }
 });
+
+function toggleMenu() {
+    var content = document.querySelector('.menuContent');
+    var content1 = document.querySelector('.menuContent2');
+    if (content.style.display === 'block') {
+        content.style.display = 'none';
+    } else {
+        if (content1.style.display === 'block') {
+            content1.style.display = 'none';
+        }
+        content.style.display = 'block';
+    }
+}
+function toggleMenu1() {
+    var content = document.querySelector('.menuContent');
+    var content1 = document.querySelector('.menuContent2');
+    if (content1.style.display === 'block') {
+        content1.style.display = 'none';
+    } else {
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        }
+        content1.style.display = 'block';
+    }
+}
