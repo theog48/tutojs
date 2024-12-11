@@ -18,3 +18,21 @@ if (body.classList.contains('dark-mode')) {
     localStorage.setItem('darkMode', 'disabled');
 }
 });
+
+
+document.getElementById('formulaire').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const nom = document.getElementById('nom').value;
+    const nombre = document.getElementById('nbPersonne').value;
+    if (nom.length < 3) {
+        alert("Le nom doit contenir au moins 3 caractères.");
+        return;
+    }
+    const nombreInt = parseInt(nombre, 10);
+    if (isNaN(nombreInt) || nombreInt <= 0 || nombre !== String(nombreInt)) {
+        alert("Le nombre de personnes doit être un entier positif.");
+        return;
+    }
+    alert("Formulaire validé !");
+    event.target.submit();
+});

@@ -74,15 +74,14 @@
         <h3>Réservez votre table</h3>
         <p>il suffit juste de remplir le formulaire suivant.</p>
         <form action="" class="formulaire">
-            <div class="fieldGroup"><label for="nom">Nom</label><input name="nom" type="text"></div>
-            <div class="fieldGroup"><label for="prenom">Prénom</label><input name="prenom" type="text"></div>
-            <div class="fieldGroup"><label for="date">Date</label><input name="telephone" type="text"></div>
-            <div class="fieldGroup"><label for="nbpersonne">Nombre de personne</label><input name="nbPersonne" type="text"></div>
+            <div class="fieldGroup"><label for="nom">Nom</label><input id="nom" name="nom" type="text" required></div>
+            <div class="fieldGroup"><label for="prenom">Prénom</label><input name="prenom" type="text" required></div>
+            <div class="fieldGroup"><label for="date">Date</label><input name="telephone" type="date" required></div>
+            <div class="fieldGroup"><label for="nbpersonne">Nombre de personne</label><input id="nbPersonne" name="nbPersonne" type="text" required></div>
             <div class="fieldGroup"></div>
             <div class="fieldGroup"><button>Je réserve</button></div>
         </form>
     </section>
-    <br>
     <footer>
         <div class="logo"><image src="/images/logo.png" alt="logo" height="100px"></div>
         <br>
