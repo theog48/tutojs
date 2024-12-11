@@ -11,10 +11,10 @@ toggleButton.textContent = 'Activer le Mode Clair';
 toggleButton.addEventListener('click', () => {
 body.classList.toggle('dark-mode');
 if (body.classList.contains('dark-mode')) {
-    toggleButton.textContent = 'Activer le Mode Clair';
+    toggleButton.textContent = '🌕';
     localStorage.setItem('darkMode', 'enabled');
 } else {
-    toggleButton.textContent = 'Activer le Mode Sombre';
+    toggleButton.textContent = '🌑';
     localStorage.setItem('darkMode', 'disabled');
 }
 });

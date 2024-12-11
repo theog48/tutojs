@@ -73,7 +73,7 @@ body{
     align-items: center; 
     justify-content: center;
     text-align: center;
-    
+    list-style: none;
 }
 .menuIta{
     text-align: center;
@@ -86,6 +86,7 @@ body{
     width: 300px;
     margin: 20px;
     background-color: green;
+    color: black;
 }
 .pates {
     border: 2px solid #000;
@@ -94,6 +95,7 @@ body{
     width: 300px;
     margin: 20px;
     background-color: #f9f9f9;
+    color: black;
 }
 .divers {
     border: 2px solid #000;
@@ -102,6 +104,7 @@ body{
     width: 300px;
     margin: 20px;
     background-color: red;
+    color: black
 }
 #image .image_list {
     display: flex; /* Utilise flexbox pour disposer les éléments sur une ligne */
@@ -214,5 +217,5 @@ body.dark-mode nav {
     color: #ffffff;
 }
 #image .image_item img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
