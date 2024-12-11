@@ -9,6 +9,9 @@ body{
     background-color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 100px;
+    overflow: auto;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.19'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 #navigation {
     display: flex;
@@ -18,10 +21,10 @@ body{
     align-items: center;
 }
 #navigation a {
-    color: black;
     text-decoration: none;
     margin: 15px;
     font-size: 18px;
+    color: rgb(104, 102, 102);
     }
     #navigation a:hover {
     text-decoration: underline;
@@ -82,7 +85,7 @@ body{
     padding: 20px;
     width: 300px;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: green;
 }
 .pates {
     border: 2px solid #000;
@@ -98,7 +101,7 @@ body{
     padding: 20px;
     width: 300px;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: red;
 }
 #image .image_list {
     display: flex; /* Utilise flexbox pour disposer les éléments sur une ligne */
@@ -115,6 +118,7 @@ body{
 #image .image_item img {
     max-height: 300px; /* Définit la hauteur maximale de l'image */
     justify-content: space-around;
+    transition: transform 1s ease
 }
 h2{
     text-align: center;
@@ -141,11 +145,10 @@ p.presentation{
     font-size: medium;
 }
 footer{
-    background-color: grey;
+    background-color: rgb(174, 152, 152);
     border: 2px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
+    border-radius: 13px;
+    width: 99,9%;
 }
 ul.rs{
     display: flex;
@@ -183,4 +186,33 @@ body.dark-mode button {
 }
 body.dark-mode button:hover {
     background-color: whitesmoke;
+}
+html {
+	--sz: 28px;
+	--c1: #a7c957;
+	--c2: #6a994e;
+	--c3: #386641;
+	--c4: #4a8656;   
+	--ts: 50%/ calc(var(--sz) * 5.5) calc(var(--sz) * 9.5);
+	--b1: conic-gradient(from 180deg at 16% 73.5%, var(--c2) 0 120deg, #fff0 0 100%) var(--ts);
+	--b2: conic-gradient(from 180deg at 39.5% 65.65%, var(--c3) 0 60deg, var(--c1) 0 120deg, #fff0 0 100%) var(--ts);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	/* Retirer l'overflow caché pour permettre le défilement */
+	background: 
+		conic-gradient(from 0deg at 92.66% 50%, var(--c2) 0 120deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from -60deg at 81.66% 10.25%, var(--c2) 0 180deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from -60deg at 66.66% 22.25%, var(--c1) 0 120deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from 0deg at 71.66% 43%, var(--c3) 0 120deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from 0deg at 66.66% 45.95%, var(--c3) 0 60deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from 120deg at 25% 91.5%, var(--c1) 0 120deg, #fff0 0 100%) var(--ts),
+		var(--b1), var(--b1), var(--b1), var(--b1),	var(--b2), var(--b2), var(--b2), var(--b2),      
+		conic-gradient(from 60deg at 50% 51.5%, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c4) 0 100%) var(--ts);
+}
+body.dark-mode nav {
+    color: #ffffff;
+}
+#image .image_item img:hover{
+    transform: scale(1.5);
 }
